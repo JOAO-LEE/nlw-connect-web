@@ -6,23 +6,21 @@ import { ArrowRight, Copy, Mail } from "lucide-react";
 export default function Home() {
   return (
     <main>
-      <Button
-      >
+      <Button>
         Enviar
-        <ArrowRight/>
+        <ArrowRight />
       </Button>
 
       <IconButton>
-        <Copy/>
+        <Copy />
       </IconButton>
 
-     <InputRoot>
+      <InputRoot>
         <InputIcon>
-          <Mail className="size-5"/>
+          <Mail className="size-5" />
         </InputIcon>
         <InputField />
-     </InputRoot>
-
+      </InputRoot>
     </main>
   );
 }
