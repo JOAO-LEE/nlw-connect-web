@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 
 const oxanium = Oxanium({weight: ["500", "600"], subsets: ["latin"], variable: "--font-oxanium"});
 
-const montserrat = Oxanium({weight: ["400", "600"], subsets: ["latin"], variable: "--font-montserrat"});
+const montserrat = Montserrat({weight: ["400", "600"], subsets: ["latin"], variable: "--font-montserrat"});
 
 
 export default function RootLayout({
@@ -18,7 +18,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${oxanium.variable} ${montserrat.variable}`}>
-      <body className="bg-black text-white">{children}</body>
+      <body className="bg-gray-900 text-gray-100 antialiased">{children}</body>
     </html>
   );
 }
