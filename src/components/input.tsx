@@ -1,8 +1,13 @@
-import type { ComponentProps } from "react";
 import { Mail } from "lucide-react";
+import type { ComponentProps } from "react";
 
 export default function InputField({ ...rest }: ComponentProps<"input">) {
-  return <input className="flex-1 outline-0 placeholder-gray-400" {...rest} />;
+  return (
+    <input
+      className="flex-1 outline-0 placeholder-gray-400 bg-gray-800 text-gray-400"
+      {...rest}
+    />
+  );
 }
 
 export function InputRoot({
