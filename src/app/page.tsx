@@ -5,7 +5,8 @@ import { ArrowRight, Copy } from "lucide-react";
 export default function Home() {
   return (
     <main>
-      <Button>
+      <Button
+      >
         Enviar
         <ArrowRight/>
       </Button>

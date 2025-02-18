@@ -1,8 +1,9 @@
-import { ReactNode } from "react"
+import { ComponentProps, ReactNode } from "react"
 
-export default function IconButton({ children }: { children: ReactNode }) {
+export default function IconButton({ children, ...rest }: { children: ReactNode } & ComponentProps<"button">) {
   return (
-    <button 
+    <button
+    {...rest} 
     className="p-1.5 bg-gray-500 text-blue rounded-md cursor-pointer hover:bg-blue hover:text-gray-900 transition-colors duration-300">
     {children}
     </button>
